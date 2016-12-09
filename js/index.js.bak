@@ -1,0 +1,58 @@
+function addLoadEvent(func){
+  var oldonload=window.onload;
+  if(typeof window.onload!="function"){
+    window.onload=func;
+  }else{window.onload=function(){
+    oldonload();
+	func();
+  }
+ }
+}
+
+function showFocusImg(){
+  var focusImg=document.getElementById("focusImg");
+  var imgList=focusImg.getElementsByTagName("li");
+  var arr=[];
+ for(var i=0;i<imgList.length;i++){
+    arr.push(getStyle(imgList[i],"left"));
+  }
+  var prev=document.getElementById("prev");
+  var next=document.getElementById("next");
+  prev.onclick=function(){
+    arr.push(arr[0]);
+	arr.shift();
+	for(var n=0;n<imgList.length;n++){
+	  imgList[n].style.left=arr[n];
+	}
+  }
+  next.onclick=function(){
+    arr.unshift(arr[arr.length-1]);
+	arr.pop();
+	for(var n=0;n<imgList.length;n++){
+	  imgList[n].style.left=arr[n];
+	}
+  }
+}
+function getStyle(obj,attr){
+ if(obj.currentStyle){
+	  return obj.currentStyle[attr];
+	}else{return getComputedStyle(obj,false)[attr];}
+}
+function showButton(){
+  var imgGallery=document.getElementById("imgGallery");
+  var prev=document.getElementById("prev");
+  var next=document.getElementById("next");
+  imgGallery.onmouseenter=function(){
+    prev.style.display="block";
+    next.style.display="block";
+  }
+  imgGallery.onmouseleave=function(){
+    prev.style.display="none";
+    next.style.display="none";
+  }
+}
+
+addLoadEvent(getStyle);
+addLoadEvent(showFocusImg);
+addLoadEvent(showButton);
+
