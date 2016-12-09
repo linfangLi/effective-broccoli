@@ -1,0 +1,29 @@
+body{margin:0;
+     padding:0;
+	 font-size:12px;
+	 background-color:#F5F5F5;
+}
+ul,ol,li{
+  margin:0;
+  padding:0;
+list-style:none;
+}
+p,h3,h4{margin:0;
+  padding:0;}
+a{text-decoration:none;}
+
+.container{
+  width:1000px;
+  margin:0 auto;
+}
+.top a:link,.top a:visited{
+  text-decoration:none;
+  color:#8E8E8E;
+}
+.top a:hover,.top a:active{
+  text-decoration:none;
+  color:red;
+}
+img{border:none;
+  padding:0;
+ }

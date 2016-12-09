@@ -1,0 +1,219 @@
+/*top样式设置*/
+.top{
+  width:100%;
+  height:27px;
+  background:url(../images/top_bg.jpg) repeat-x;
+}
+.top li{
+  list-style-image:url(../images/li_bg.gif);
+  float:right;
+  width:70px;
+  line-height:27px;
+}
+/*head样式设置*/
+.head{
+  height:90px;
+  background:url(../images/logo.jpg) no-repeat;
+  background-color:white;
+}
+.tel{
+  color:#8E8E8E;
+  float:right;
+  height:35px;
+  margin-top:25px;
+  margin-right:10px;
+  text-indent:40px;
+  background:url(../images/tel.jpg) no-repeat bottom left;
+}
+.tel span{
+  font-size:24px;
+  color:#B22222;
+  margin:0;
+  padding:0;
+  font-family:"微软雅黑";
+}
+/*nav样式设置*/
+.nav{
+  height:40px;
+  background:url(../images/nav_bg.jpg) repeat-x;
+  border-radius:5px;
+  margin-top:-10px;
+  position:relative;
+}
+.nav li{
+  float:left;
+  width:75px;
+  line-height:40px;
+  padding-left:35px;
+  font-family:"微软雅黑";
+}
+.nav a:link,.nav a:visited{
+  font-size:16px;
+  color:white;
+}
+.nav a:hover,.nav a:active{
+  color:yellow;
+}
+.search{
+  height:30px;
+  width:200px;
+  position:absolute;
+  top:5px;
+  right:70px;
+}
+/*搜索框样式设置*/
+form{background-color:white;width:204px;height:28px;float:right;position:relative;padding:1px;margin-top:5px;margin-right:60px;}
+input{border:none;outline:none;}
+input.search{width:175px;line-height:26px;left:0;height:26px;position:absolute;top:0px;}
+input.submit{width:25px;background:url(../images/search.jpg) no-repeat center center;right:0;height:26px;position:absolute;top:0px;}
+/*main样式设置*/
+#imgGallery{height:310px;
+  margin:10px 0 10px 0;
+  background-color:white;
+  position:relative;
+}
+#focusImg{
+  height:310px;
+  width:1000px;
+  position:relative;
+  overflow:hidden;
+}
+#focusImg li{position:absolute;}
+li.img_1{top:0;left:0;}
+li.img_2{top:0;left:1000px;}
+li.img_3{top:0;left:2000px;}
+#prev,#next{width:30px;height:30px;color:white;display:none;text-align:center;font-weight:bold;}
+#prev{position:absolute;top:151px;left:5px;}
+#next{position:absolute;top:151px;right:5px;}
+#prev:hover,#next:hover{color:yellow;}
+/*内容区样式设置*/
+.mainbody{
+  height:232px;
+  margin-bottom:5px;
+  background-color:white;
+}
+/*内容区标头样式设置*/
+/*新闻栏样式设置*/
+.new{
+  height:230px;
+  width:288px;
+  float:left;
+  border:1px solid #E8E8E8;
+}
+.title{
+  height:29px;
+  color:#8E8E8E;
+  font-size:12px;
+  font-family:"微软雅黑";
+  border-bottom:1px solid #E8E8E8;
+}
+.title h3{
+  height:29px;
+  width:60%;
+  line-height:29px;
+  float:left;
+  margin-left:20px;
+}
+.title a{
+  width:50px;
+  line-height:30px;
+  float:right;
+  margin-right:10px;
+  }
+.pic_news{
+  height:88px;
+  clear:both;
+  margin:10px 0px 5px 5px;
+}
+.pic_news img{float:left;}
+.pic_news p{float:right;
+  line-height:22px;
+  margin-right:5px;
+  }
+h4{
+  display:inline-block;
+  color:red;
+  font-size:14px;
+  font-family:"微软雅黑";
+  margin-left:7px;
+  }
+.pic_news a{color:red;}
+.news_list{
+  height:97px;
+  margin:5px;
+}
+.news_list li{
+  line-height:20px;
+  list-style:url(../images/list.jpg) inside;
+  border-bottom:1px dotted #8E8E8E;
+}
+.news_list a{color:black;}
+.news_list a:hover{color:red;}
+/*产品栏样式设置*/
+.product{
+  height:230px;
+  width:448px;
+  float:left;
+  margin:0 8px;
+  border:1px solid #E8E8E8;
+}
+.pic_product{
+  height:106px;
+  width:438px;
+  margin:10px 5px;
+  }
+.pic_product img{float:left;}
+.pic_product p{
+  width:270px;
+  float:right;
+  line-height:22px;
+  }
+.product_list{
+  width:100%;
+  height:37px;
+  background:url(../images/product_type_bg.jpg) repeat-x center;
+  margin:20px auto;
+}
+.product_list li{
+  float:left;
+  width:112px;
+  text-align:center;
+  line-height:37px;
+}
+/*多媒体栏样式设置*/
+.medium{
+  height:230px;
+  width:242px;
+  float:left;
+  border:1px solid #E8E8E8;
+}
+.audio{
+  height:143px;
+  margin-bottom:10px;
+}
+/*脚注部分样式设置*/
+.footer{
+  clear:both;
+  width:100%;
+  height:200px;
+  background-color:#E8E8E8;
+}
+.container_footer{
+  width:1000px;
+  margin:0 auto;
+  height:160px;
+  padding-top:20px;
+  
+}
+.container_footer li{
+  width:200px;
+  float:left;
+  font-size:16px;
+  text-align:center;
+  background:url(../images/line.png) no-repeat right center;
+  line-height:30px;
+}
+.container_footer a{
+  color:#999;
+}
+
